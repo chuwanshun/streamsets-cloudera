@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "name": "STREAMSETS_DATACOLLECTOR",
+  "version": "3.3.1",
+  "extraVersionInfo": {
+    "fullVersion": "3.3.1",
+    "baseVersion": "3.3.1",
+    "patchCount": "0"
+  },
+  "depends": "CDH (>= 5.2), CDH (<< 6.0)",
+  "setActiveSymlink": true,
+  "scripts": {
+    "defines": "sdc_parcel_env.sh"
+  },
+  "packages": [
+    {
+      "name": "sdc",
+      "version": "3.3.1"
+    }
+  ],
+  "components": [
+    {
+      "name": "sdc",
+      "version": "3.3.1",
+      "pkg_version": "3.3.1"
+    }
+  ],
+  "provides": [
+    "streamsets"
+  ],
+  "users": {
+    "sdc": {
+      "longname": "StreamSets Data Collector",
+      "home": "/var/lib/sdc",
+      "shell": "/sbin/nologin",
+      "extra_groups": []
+    }
+  },
+  "groups": [
+    "sdc"
+  ]
+}
